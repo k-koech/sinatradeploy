@@ -1,6 +1,8 @@
-require 'sinatra'
+
 require 'sqlite3'
 require 'sinatra/activerecord'
+require 'sinatra'
+
 
 # Set up the database connection
 set :database, { adapter: "sqlite3", database: "database.db" }
