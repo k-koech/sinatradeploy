@@ -6,7 +6,7 @@ require 'sinatra/activerecord'
 
 
 # Set up the database connection
-set :database, { adapter: "sqlite3", database: "database.db" }
+set :database, { adapter: "sqlite3", database: "database.sqlite" }
 class User < ActiveRecord::Base
 end
 
