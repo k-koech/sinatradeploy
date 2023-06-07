@@ -1,9 +1,8 @@
 # $LOAD_PATH.unshift(File.expand_path('lib', __dir__))
 require 'bundler/setup'
-
+require 'sinatra'
 require 'sqlite3'
 require 'sinatra/activerecord'
-require 'sinatra'
 
 
 # Set up the database connection
