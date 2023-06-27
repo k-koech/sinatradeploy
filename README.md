@@ -41,3 +41,24 @@ function maxPairSum(cards) {
 // Test the function
 const cards = [1, 4, 3, 2];
 console.log(maxPairSum(cards)); // Output: 4
+
+
+
+function maximumPairSum(cards) {
+  // Step 1: Sort the array in ascending order
+  cards.sort((a, b) => a - b);
+
+  let sum = 0;
+  // Step 2: Pair up adjacent elements and sum up the smaller value in each pair
+  for (let i = 0; i < cards.length; i += 2) {
+    sum += cards[i];
+  }
+
+  // Step 3: Return the maximum possible sum
+  return sum;
+}
+
+// Example usage:
+const cards = [1, 4, 3, 2];
+console.log(maximumPairSum(cards)); // Output: 4
+
